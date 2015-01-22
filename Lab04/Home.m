@@ -8,7 +8,8 @@
 
 #import "Home.h"
 
-int counter=0;
+int counter;
+NSTimer *myTimer;
 
 @interface Home ()
 
@@ -19,11 +20,18 @@ int counter=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    counter=0;
+    
+     myTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(GoToScore) userInfo:nil repeats:NO];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)GoToScore{
+    [self performSegueWithIdentifier:@"GoToScores" sender:self];
 }
 
 - (IBAction)btnPush:(id)sender {
