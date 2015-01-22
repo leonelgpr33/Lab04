@@ -15,6 +15,7 @@
 		B9C627AE1A6DF182002C8028 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C627AC1A6DF182002C8028 /* LaunchScreen.xib */; };
 		B9C627BA1A6DF182002C8028 /* Lab04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C627B91A6DF182002C8028 /* Lab04Tests.m */; };
 		B9D614A41A70AF55003A56A3 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D614A31A70AF55003A56A3 /* Scores.m */; };
+		B9D614A71A70BBC2003A56A3 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D614A61A70BBC2003A56A3 /* GlobalVars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		B9C627B91A6DF182002C8028 /* Lab04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab04Tests.m; sourceTree = "<group>"; };
 		B9D614A21A70AF55003A56A3 /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
 		B9D614A31A70AF55003A56A3 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
+		B9D614A51A70BBC2003A56A3 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
+		B9D614A61A70BBC2003A56A3 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				B9C627A51A6DF182002C8028 /* Home.m */,
 				B9D614A21A70AF55003A56A3 /* Scores.h */,
 				B9D614A31A70AF55003A56A3 /* Scores.m */,
+				B9D614A51A70BBC2003A56A3 /* GlobalVars.h */,
+				B9D614A61A70BBC2003A56A3 /* GlobalVars.m */,
 				B9C627A71A6DF182002C8028 /* Main.storyboard */,
 				B9C627AA1A6DF182002C8028 /* Images.xcassets */,
 				B9C627AC1A6DF182002C8028 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D614A71A70BBC2003A56A3 /* GlobalVars.m in Sources */,
 				B9C627A61A6DF182002C8028 /* Home.m in Sources */,
 				B9C627A31A6DF182002C8028 /* AppDelegate.m in Sources */,
 				B9D614A41A70AF55003A56A3 /* Scores.m in Sources */,

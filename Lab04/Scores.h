@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Scores : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *lblResultado;
+@property (strong, nonatomic) IBOutlet UILabel *lblTimestamp;
 
 @end
