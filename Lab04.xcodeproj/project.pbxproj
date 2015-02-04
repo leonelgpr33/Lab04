@@ -16,6 +16,9 @@
 		B9C627BA1A6DF182002C8028 /* Lab04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C627B91A6DF182002C8028 /* Lab04Tests.m */; };
 		B9D614A41A70AF55003A56A3 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D614A31A70AF55003A56A3 /* Scores.m */; };
 		B9D614A71A70BBC2003A56A3 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D614A61A70BBC2003A56A3 /* GlobalVars.m */; };
+		B9E3F7691A7DD2F50090C044 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E3F7681A7DD2F50090C044 /* libsqlite3.dylib */; };
+		B9E3F76C1A7DD45B0090C044 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3F76B1A7DD45B0090C044 /* DBManager.m */; };
+		B9E3F7701A7E07790090C044 /* Customcell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3F76F1A7E07790090C044 /* Customcell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,11 @@
 		B9D614A31A70AF55003A56A3 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
 		B9D614A51A70BBC2003A56A3 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
 		B9D614A61A70BBC2003A56A3 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
+		B9E3F7681A7DD2F50090C044 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B9E3F76A1A7DD45B0090C044 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B9E3F76B1A7DD45B0090C044 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		B9E3F76E1A7E07790090C044 /* Customcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customcell.h; path = Lab04/Customcell.h; sourceTree = "<group>"; };
+		B9E3F76F1A7E07790090C044 /* Customcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customcell.m; path = Lab04/Customcell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E3F7691A7DD2F50090C044 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +78,8 @@
 		B9C627911A6DF182002C8028 = {
 			isa = PBXGroup;
 			children = (
+				B9E3F76D1A7E07240090C044 /* Customizado */,
+				B9E3F7681A7DD2F50090C044 /* libsqlite3.dylib */,
 				B9C6279C1A6DF182002C8028 /* Lab04 */,
 				B9C627B61A6DF182002C8028 /* Lab04Tests */,
 				B9C6279B1A6DF182002C8028 /* Products */,
@@ -87,6 +98,8 @@
 		B9C6279C1A6DF182002C8028 /* Lab04 */ = {
 			isa = PBXGroup;
 			children = (
+				B9E3F76A1A7DD45B0090C044 /* DBManager.h */,
+				B9E3F76B1A7DD45B0090C044 /* DBManager.m */,
 				B9C627A11A6DF182002C8028 /* AppDelegate.h */,
 				B9C627A21A6DF182002C8028 /* AppDelegate.m */,
 				B9C627A41A6DF182002C8028 /* Home.h */,
@@ -127,6 +140,15 @@
 				B9C627B81A6DF182002C8028 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9E3F76D1A7E07240090C044 /* Customizado */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3F76E1A7E07790090C044 /* Customcell.h */,
+				B9E3F76F1A7E07790090C044 /* Customcell.m */,
+			);
+			name = Customizado;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D614A71A70BBC2003A56A3 /* GlobalVars.m in Sources */,
+				B9E3F7701A7E07790090C044 /* Customcell.m in Sources */,
 				B9C627A61A6DF182002C8028 /* Home.m in Sources */,
 				B9C627A31A6DF182002C8028 /* AppDelegate.m in Sources */,
+				B9E3F76C1A7DD45B0090C044 /* DBManager.m in Sources */,
 				B9D614A41A70AF55003A56A3 /* Scores.m in Sources */,
 				B9C627A01A6DF182002C8028 /* main.m in Sources */,
 			);

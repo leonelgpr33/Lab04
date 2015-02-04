@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
 @interface Home : UIViewController
 
 //labels
 @property (strong, nonatomic) IBOutlet UILabel *lblScore;
+@property (strong, nonatomic) IBOutlet UILabel *lblCountDown;
 
 //actions
 - (IBAction)btnPush:(id)sender;

@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
-@interface Scores : UIViewController
+
+@interface Scores : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
 @property (strong, nonatomic) IBOutlet UILabel *lblResultado;
+
 @property (strong, nonatomic) IBOutlet UILabel *lblTimestamp;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
+- (IBAction)btnBack:(id)sender;
 
 @end

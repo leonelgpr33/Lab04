@@ -10,6 +10,12 @@
 #import "GlobalVars.h"
 
 
+int counter;
+int countDown;
+NSTimer *initCountDown;
+
+
+
 NSTimer *myTimer;
 
 @interface Home ()
@@ -24,6 +30,19 @@ NSTimer *myTimer;
     counter=0;
     
      myTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(GoToScore) userInfo:nil repeats:NO];
+    
+
+}
+
+-(void)Save{
+    BOOL success = NO;
+    NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
+    [DateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    
+    
+    success = [[DBManager getSharedInstance]saveData:
+               [NSString stringWithFormat:@"%i",counter]
+                                              detail:[DateFormatter stringFromDate:[NSDate date]]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +51,10 @@ NSTimer *myTimer;
 }
 
 - (void)GoToScore{
+    [self Save];
     [self performSegueWithIdentifier:@"GoToScores" sender:self];
+    
+
 }
 
 - (IBAction)btnPush:(id)sender {
