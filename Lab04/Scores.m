@@ -121,36 +121,11 @@ NSMutableArray *maScores;
     
     cell.Title.text       = [record objectAtIndex:0];
     cell.Detail.text      = [record objectAtIndex:1];
-/*
-    if (indexPath.row == pos) {
-        cell.backgroundColor = [UIColor brownColor];
-    }
-*/
+
     return cell;
 }
 
-
-/*/-------------------------------------------------------------------------------
- - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
- self.lblSelectedName.text = maScores[indexPath.row];
- NSString *strTemp;
- 
- strTemp = [self.lblSelectedName.text stringByAppendingString: @" fué seleccionado"];
- 
- if (indexPath.row == 2)
- {
- alert = [[UIAlertView alloc] initWithTitle:@"Alerta Oaxaca"
- message:strTemp
- delegate:self
- cancelButtonTitle:@"Cancelar"
- otherButtonTitles:@"Guardar", @"Publicar", nil];
- [alert show];
- }
- }
- */
-
 - (IBAction)btnBack:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"GoToHome" sender:self];;
 }
 @end

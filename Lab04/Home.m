@@ -11,8 +11,7 @@
 
 
 int counter;
-int countDown;
-NSTimer *initCountDown;
+int countDown = 0;
 
 
 
@@ -28,11 +27,28 @@ NSTimer *myTimer;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     counter=0;
-    
-     myTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(GoToScore) userInfo:nil repeats:NO];
+    countDown=0;
+     myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(ImprimeContador) userInfo:nil repeats:YES];
+   
+    self.lblCountDown.text = @"";
     
 
 }
+
+-(void)ImprimeContador{
+    int valor = 10-countDown;
+    self.lblCountDown.text = [NSString stringWithFormat:@"%d",valor];
+    countDown++;
+    if (countDown == 10) {
+        [myTimer invalidate];
+        myTimer = nil;
+        [self GoToScore];
+    }
+}
+
+
+
+
 
 -(void)Save{
     BOOL success = NO;
